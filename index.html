@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>tendria que estar estudiando por que no hice nada de la segunda preentrega....(toca el boton)</p>
+  <button onclick="hablar()">escuchame</button>
+
+
+  <script>
+function hablar(){
+    let voz = new SpeechSynthesisUtterance();
+    voz.text = "pero te vas a ir pa tras viendo como el gordo hace estas boludeces";
+    voz.lang = "es-MX";
+    speechSynthesis.speak(voz)
+}
+  </script>
+</body>
+</html>
